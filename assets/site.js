@@ -10,8 +10,8 @@ const CONFIG = {
   onlineStore: "",
   instagram: "https://www.instagram.com/habibihubza/",  // TODO: paste the shop's Instagram profile link
   facebook: "",   // TODO: paste the shop's Facebook page link
-  partnerName: "", // delivery partner shown as a 3rd way to get an order; "" hides every partner card, button and sentence
-  partnerUrl: ""          // TODO: the shop's page on the partner's site
+  partnerName: "7Waves", // delivery partner shown as a 3rd way to get an order; "" hides every partner card, button and sentence
+  partnerUrl: "https://waves-pink-kappa.vercel.app/shop"          // TODO: the shop's page on the partner's site
 };
 const DETAIL_SHARDS = 40; // must match SHARDS in tools/snapshot.py
 
@@ -244,7 +244,7 @@ function chromeBottom() {
     <div class="db"></div>
     <div class="df">
       <div class="seg${CONFIG.partnerName ? " three" : ""}" id="d-mode" role="group" aria-label="How do you want it?"><button data-m="collect">Collect</button><button data-m="deliver">Delivery</button>${CONFIG.partnerName ? `<button data-m="waves">${CONFIG.partnerName}</button>` : ""}</div>
-      <div class="wavebox" id="d-wave" hidden><b>Want it fast? Order through 7Waves</b><span>7Waves is our delivery partner. Same prices as the shop, brought to your door. Copy your bag, open 7Waves and order the same items there.</span>
+      <div class="wavebox" id="d-wave" hidden><b>Want it fast? Order through 7Waves</b><span>7Waves is our delivery partner and brings it to your door. Copy your bag, open 7Waves and order the same items there.</span>
         <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-sm btn-line" id="d-copy">Copy my list</button><a class="btn btn-sm btn-wave" id="d-wave-go" target="_blank" rel="noopener">Open 7Waves ${I.out}</a></div></div>
       <div class="field pickup"><label for="d-name">Your name</label><input id="d-name" autocomplete="name" placeholder="Name and surname"></div>
       <div class="field" id="d-addr-wrap" hidden><label for="d-addr">Delivery address</label><input id="d-addr" autocomplete="street-address" placeholder="Street, suburb, city"></div>
