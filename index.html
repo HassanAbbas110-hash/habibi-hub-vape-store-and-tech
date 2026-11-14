@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Habibi Hub Vape Store & Tech · Vape Shop with a Twist, Lambton Germiston</title>
+<meta name="description" content="Habibi Hub Vape Store & Tech at 1 6th Ave, Lambton, Germiston: a vape shop with a twist. Vapes and e-liquids, Dubai-inspired perfumes, tech and gadgets. Retail and wholesale.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d0c0c">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/yellowtail-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/shopfront.webp">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 70% 60% at 75% 40%,rgba(245,165,36,.16),transparent 70%),var(--bg)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-block:64px 96px}
+.hero h1{font-size:clamp(52px,8.4vw,112px);line-height:.9;margin-top:16px}
+.hero h1 .script{font-size:.9em}
+.hero .lead{font-size:clamp(16px,1.6vw,18.5px);color:var(--mute);max-width:540px;margin:24px 0 30px}
+.hero .lead b{color:var(--ink);font-weight:600}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:12px 34px;flex-wrap:wrap;margin-top:40px}
+.facts div{border-left:2px solid var(--red);padding-left:14px;font-size:13px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
+.facts b{display:block;font-family:var(--head);font-size:40px;line-height:1;color:var(--ink);letter-spacing:0;font-variant-numeric:tabular-nums}
+.frame{position:relative;max-width:520px;justify-self:center}
+.frame .ph{border-radius:22px;overflow:hidden;transform:rotate(2deg);box-shadow:0 50px 90px -30px rgba(245,165,36,.5),0 0 0 1px rgba(255,255,255,.08)}
+.frame .ph img{width:100%;aspect-ratio:600/583;object-fit:cover}
+.chipf{position:absolute;display:flex;align-items:center;gap:10px;padding:11px 15px;border-radius:14px;background:rgba(17,15,15,.9);backdrop-filter:blur(8px);border:1px solid var(--line);font-size:13.5px;box-shadow:0 18px 40px rgba(0,0,0,.45);animation:bob 6s ease-in-out infinite}
+.chipf b{font-family:var(--head);font-size:24px;line-height:1}
+.chipf svg{width:20px;height:20px;color:var(--red-hi)}
+.chipf.a{left:-28px;top:16%}
+.chipf.b{right:-18px;bottom:12%;animation-delay:-3s}
+.sticker{position:absolute;right:-26px;top:-30px;width:132px;height:auto;transform:rotate(10deg);filter:drop-shadow(0 14px 22px rgba(0,0,0,.6));animation:bob 7s ease-in-out infinite;animation-delay:-1.5s}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}
+
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{position:relative;overflow:hidden;border-radius:20px;background:var(--panel);border:1px solid var(--line);padding:20px;min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;transition:border-color .3s,transform .2s;transform-style:preserve-3d}
+.cat::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(245,165,36,.22),transparent 62%);opacity:.6;transition:opacity .3s}
+.cat:hover{border-color:var(--red)}
+.cat:hover::before{opacity:1}
+.cat .im{position:absolute;left:50%;top:22px;width:58%;aspect-ratio:1;translate:-50% 0;border-radius:50%;background:#fff;overflow:hidden;box-shadow:0 20px 40px -10px rgba(0,0,0,.7);transition:transform .5s var(--ease)}
+.cat:hover .im{transform:scale(1.07) rotate(-4deg)}
+.cat .im img{width:100%;height:100%;object-fit:contain;padding:14%}
+.cat h3{position:relative;font-size:26px;text-transform:uppercase;line-height:.95}
+.cat span{position:relative;font-size:13px;color:var(--mute)}
+.cat .arr{position:absolute;right:16px;bottom:18px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .3s var(--ease)}
+.cat .arr svg{width:15px;height:15px}
+.cat:hover .arr{background:var(--red);border-color:var(--red);transform:rotate(-45deg)}
+
+/* vape finder */
+.finder{position:relative;overflow:hidden;border-radius:30px;padding:clamp(24px,4.5vw,60px);background:linear-gradient(140deg,#32230b 0%,#141111 55%,#0f0d0d);border:1px solid #4e3918;display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}
+.finder::after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-200px;border-radius:50%;background:radial-gradient(closest-side,rgba(245,165,36,.35),transparent);pointer-events:none}
+.finder>*{position:relative;z-index:1}
+.finder h2{font-size:clamp(46px,6vw,78px);line-height:.9;margin:12px 0 16px}
+.finder .side p{color:var(--mute);max-width:360px}
+.picked{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px}
+.picked span{font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--line)}
+.prog{display:flex;gap:6px;margin-bottom:22px}
+.prog i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.12);transition:background .4s}
+.prog i.on{background:var(--red-hi)}
+.stepq{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:16px}
+.stepq p{font-family:var(--head);font-size:30px;font-weight:700;text-transform:uppercase;line-height:1}
+.stepq small{color:var(--dim);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.choice{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;text-align:left;padding:16px;border-radius:18px;background:rgba(0,0,0,.28);border:1.5px solid var(--line);transition:border-color .2s,background .2s,transform .25s var(--ease)}
+.choice:hover{border-color:var(--red-hi);background:rgba(245,165,36,.1);transform:translateY(-3px)}
+.choice .gi{grid-row:span 2;width:54px;height:54px;border-radius:15px;background:rgba(255,255,255,.06);display:grid;place-items:center;color:var(--red-hi)}
+.choice .gi svg{width:28px;height:28px}
+.choice b{font-size:16px}
+.choice small{color:var(--mute);font-size:13px}
+.anim{animation:qin .45s var(--ease)}
+@keyframes qin{from{opacity:0;transform:translateX(26px)}}
+.fres{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fres .card .nm{font-size:13px}
+.fres .price{font-size:21px}
+.fres .card .bd{padding:10px}
+.ffoot{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:16px}
+.back{font-size:13.5px;color:var(--mute);text-decoration:underline;margin-top:14px}
+
+.fitbanner{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:18px 30px;align-items:center;padding:clamp(22px,4vw,40px);border-radius:26px;background:linear-gradient(120deg,#16110f,#1b1414 50%,#31230d);border:1px solid #443621;transition:border-color .3s}
+.fitbanner:hover{border-color:var(--red)}
+.fitbanner h2{font-size:clamp(36px,5vw,60px);margin:8px 0 10px}
+.fitbanner p{color:var(--mute);max-width:520px}
+.fitbanner .btn{grid-column:2;grid-row:1}
+.fitchips{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}
+.fitchips span{padding:9px 14px;border-radius:999px;border:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--mute);background:rgba(0,0,0,.25)}
+@media (max-width:700px){.fitbanner{grid-template-columns:1fr}.fitbanner .btn{grid-column:1;grid-row:auto;justify-self:start}}
+.brands{display:flex;flex-wrap:wrap;gap:10px}
+.brand{display:inline-flex;align-items:baseline;gap:8px;padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-family:var(--head);font-size:22px;font-weight:700;text-transform:uppercase;transition:all .2s}
+.brand small{font-family:var(--body);font-size:12px;color:var(--dim);font-weight:600}
+.brand:hover{background:#fff;color:#111;border-color:#fff}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photos img{border-radius:16px;width:100%;height:100%;object-fit:cover}
+.photos img:first-child{grid-row:span 2;aspect-ratio:600/795}
+.addr{display:grid;gap:14px;margin:22px 0 26px}
+.addr div{display:flex;gap:12px;align-items:flex-start}
+.addr svg{width:20px;height:20px;color:var(--red);flex:none;margin-top:2px}
+
+.twist{display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:1fr 1fr;gap:16px;min-height:520px}
+.tw{position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--panel);display:flex;align-items:flex-end;min-height:240px;transition:border-color .3s,transform .3s var(--ease)}
+.tw:hover{border-color:var(--red);transform:translateY(-4px)}
+.tw-big{grid-row:span 2}
+.tw img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.tw:hover img{transform:scale(1.05)}
+.tw::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(5,8,20,.92))}
+.tw>div:last-child{position:relative;z-index:1;padding:22px}
+.tw h3{font-size:clamp(26px,3vw,38px);text-transform:uppercase;line-height:.95;margin:10px 0 6px}
+.tw p{color:var(--mute);font-size:14.5px}
+.tw-tech{background:radial-gradient(circle at 80% 20%,rgba(245,165,36,.28),transparent 60%),linear-gradient(140deg,#0b2a4a,#0d0c0c)}
+.tw-tech::after{display:none}
+.tw-icon{position:absolute;right:24px;top:22px;width:70px;height:70px;color:var(--red-hi)}
+.tw-icon svg{width:100%;height:100%}
+.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:200px;gap:12px}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+.mosaic .m-wide{grid-row:span 2}
+@media (max-width:1000px){
+  .twist{grid-template-columns:1fr;grid-template-rows:none;min-height:0}.tw-big{grid-row:auto;min-height:380px}
+  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.mosaic .m-wide{grid-column:span 2;grid-row:auto}
+  .hero-in,.finder,.visit{grid-template-columns:1fr}
+  .frame{max-width:440px;margin-top:10px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .fres{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .hero-in{padding-block:34px 70px;gap:34px}
+  .chipf.a{left:-6px}.chipf.b{right:-6px}
+  .sticker{width:96px;right:-8px;top:-24px}
+  .cat{min-height:210px;padding:14px}
+  .cat h3{font-size:21px}
+  .cat .arr{display:none}
+  .choices{grid-template-columns:1fr}
+  .stepq p{font-size:25px}
+}
+</style>
+</head>
+<body data-page="home">
+<script src="assets/site.js"></script>
+<main id="main">
+
+<section class="hero intro">
+  <div class="smoke" aria-hidden="true"><i></i><i></i><i></i><i></i><b class="ember" style="left:8%;animation-delay:-0s;--dx:40px"></b><b class="ember" style="left:17%;animation-delay:-3.1s;--dx:-30px"></b><b class="ember" style="left:29%;animation-delay:-6.2s;--dx:20px"></b><b class="ember" style="left:41%;animation-delay:-1.4s;--dx:-50px"></b><b class="ember" style="left:52%;animation-delay:-4.6s;--dx:35px"></b><b class="ember" style="left:63%;animation-delay:-7.7s;--dx:-20px"></b><b class="ember" style="left:74%;animation-delay:-2.3s;--dx:45px"></b><b class="ember" style="left:83%;animation-delay:-5.4s;--dx:-35px"></b><b class="ember" style="left:92%;animation-delay:-8.1s;--dx:25px"></b></div>
+  <div class="spot" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div>
+      <span class="tag fade">Lambton · Germiston · Retail &amp; wholesale</span>
+      <h1><span class="w"><span>Vape</span></span> <span class="w"><span>shop</span></span> <span class="w"><span>with</span></span> <span class="w"><span>a</span></span> <span class="script">twist</span></h1>
+      <p class="lead fade d1">Vapes and e-liquids, plus <b>Dubai-inspired perfumes</b> and <b>tech &amp; gadgets</b>, all under one roof on 6th Ave in Lambton. Pop in, or fill your bag here and send it to us on WhatsApp.</p>
+      <div class="ctas fade d2">
+        <a class="btn btn-red" href="shop.html">Shop what's in stock <span data-i="arrow"></span></a>
+        <a class="btn btn-line" href="#finder">Find my flavour</a>
+      </div>
+      <div class="facts fade d3">
+        <div><b data-count-all>2 277</b>in stock</div>
+        <div><b data-count-brands>158</b>brands</div>
+        <div><b>3</b>shops in one</div>
+      </div>
+    </div>
+    <div class="frame" data-tilt>
+      <div class="ph"><img src="assets/img/shopfront.webp" alt="The Habibi Hub Vape Store &amp; Tech shopfront on 6th Ave, Lambton" width="600" height="583" fetchpriority="high"></div>
+      <img class="sticker" src="assets/img/logo.webp" alt="" width="420" height="420">
+      <div class="chipf a"><span data-i="bag"></span><div><b data-count-all>2 277</b><br>in stock today</div></div>
+      <div class="chipf b"><span data-i="pin"></span><div><b>Lambton</b><br>1 6th Ave</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" data-marquee="Disposables|Pod kits|Nic salts|E-liquids|Coils & pods|Dubai-inspired perfumes|Tech & gadgets" aria-hidden="true"></div>
+<div class="marquee alt" data-marquee="Vape shop with a twist|Retail & wholesale|Collect at Lambton|Strictly 18+" aria-hidden="true"></div>
+
+<section class="sec twist-sec">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">The twist</span><h2>Three shops in <span class="script">one</span></h2></div><p>Most vape shops stop at vapes. Walk into Habibi Hub and you'll find two more walls worth a look.</p></div>
+    <div class="twist">
+      <a class="tw tw-big rv" href="shop.html"><img src="assets/img/disposables.webp" alt="Shelves of disposable vapes at Habibi Hub" loading="lazy" width="900" height="1193"><div><span class="pill">01</span><h3>Vapes &amp; e-liquids</h3><p>Disposables, pod kits, nic salts and juices.</p></div></a>
+      <a class="tw rv" href="visit.html"><img src="assets/img/perfumes.webp" alt="A wall of Dubai-inspired perfumes at Habibi Hub" loading="lazy" width="738" height="336"><div><span class="pill">02</span><h3>Dubai-inspired perfumes</h3><p>Come in and try them on.</p></div></a>
+      <a class="tw tw-tech rv" id="tech-card" target="_blank" rel="noopener"><div class="tw-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/><path d="m13 6-3 5h4l-3 5"/></svg></div><div><span class="pill">03</span><h3>Tech &amp; gadgets</h3><p>Ask us on WhatsApp what's in today.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-bottom:48px">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">Start here</span><h2>Pick your <span class="script">cloud</span></h2></div><p>Live counts of what's on the shelf right now. Sold-out stock never shows up here.</p></div>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">Fresh stock</span><h2>Just <span class="script">landed</span></h2></div><a class="btn btn-line btn-sm" href="shop.html?new=1">See all new arrivals</a></div>
+    <div class="rail" id="new"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="finder">
+  <div class="wrap">
+    <div class="finder ring rv">
+      <div class="side">
+        <span class="tag">30-second quiz</span>
+        <h2>Vape <span class="script">finder</span></h2>
+        <p>Three taps and we'll pull your best matches from what's actually on the shelf today.</p>
+        <div class="picked" id="picked"></div>
+      </div>
+      <div id="quiz" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <a class="fitbanner rv" href="fit.html">
+      <div><span class="tag">New · Coil &amp; Pod Finder</span><h2>What fits my <span class="script">device?</span></h2>
+        <p>Pick your device and see every coil, pod and tank that fits, all in stock. Order in one tap.</p></div>
+      <div class="fitchips" id="fitchips"></div>
+      <span class="btn btn-red">Find my coils <span data-i="arrow"></span></span>
+    </a>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">Your way</span><h2>Getting <span class="script">it</span></h2></div><p>Order on WhatsApp, then collect, or ask us about delivery.</p></div>
+    <div class="dopts">
+      <div class="dopt rv"><span class="pill">Free</span><div class="ic" data-ic="pin"></div><h3>Collect</h3><p>Send your order, we get it ready, you grab it at 1 6th Ave, Lambton. Bring your ID.</p></div>
+      <div class="dopt rv"><span class="pill">Ask us</span><div class="ic" data-ic="truck"></div><h3>Delivery</h3><p>Send your address on WhatsApp and we'll tell you what's possible before you pay.</p></div>
+      <a class="dopt wv rv" data-f="partner" id="wave-card" target="_blank" rel="noopener"><span class="pill">Fast local</span><div class="ic" data-ic="out"></div><h3>7Waves</h3><p>Our delivery partner brings it to your door, at shop prices. Tap to open 7Waves.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">Names you know</span><h2>Shop by <span class="script">brand</span></h2></div><p>Our biggest brands. There are plenty more in the shop.</p></div>
+    <div class="brands" id="brands"></div>
+  </div>
+</section>
+
+<section class="sec paper">
+  <div class="wrap visit">
+    <div class="photos rv">
+      <img src="assets/img/shopfront.webp" alt="Habibi Hub shopfront with the black deck and railings" width="900" height="874" loading="lazy">
+      <img src="assets/img/eliquids.webp" alt="Shelves of e-liquids and disposables" width="900" height="1028" loading="lazy">
+      <img src="assets/img/g-ceiling.webp" alt="The hexagon-lit ceiling over the vape wall" width="334" height="558" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="tag">Visit us</span>
+      <h2 style="margin-top:10px">Come say <span class="script">hi</span></h2>
+      <p class="muted" style="margin-top:14px;max-width:460px">Find us on 6th Ave in Lambton, Germiston, behind the black deck. Grab your usual, smell the perfumes, or ask which coil fits your device.</p>
+      <div class="addr">
+        <div><span data-i="pin"></span><span><b>1 6th Ave, Lambton</b><br>Germiston, 0181, Gauteng</span></div>
+        <div><span data-i="clock"></span><span>Saturdays from 8:30am. Call or WhatsApp to check other days.</span></div>
+        <div><span data-i="phone"></span><a class="link" href="tel:+27647629443">+27 64 762 9443</a></div>
+      </div>
+      <div class="ctas"><a class="btn btn-red" href="visit.html">Map &amp; directions</a><a class="btn btn-line" id="dir-btn" target="_blank" rel="noopener">Open in Google Maps</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">Inside Habibi Hub</span><h2>The <span class="script">shop</span></h2></div><p>Shelves, scents and the odd football promo.</p></div>
+    <div class="mosaic">
+      <img class="m-wide" src="assets/img/perfumes.webp" alt="Perfume wall" width="738" height="336" loading="lazy">
+      <img src="assets/img/g-disposables.webp" alt="Disposables display above the counter" width="334" height="558" loading="lazy">
+      <img src="assets/img/g-sign.webp" alt="Habibi Hub metal sign on the wall" width="334" height="418" loading="lazy">
+      <img src="assets/img/g-oxbar.webp" alt="Oxbar promo stand with footballs" width="334" height="418" loading="lazy">
+      <img src="assets/img/g-promo.webp" alt="Football promo box on the counter" width="334" height="418" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="tag">The Habibi Hub crew</span><h2>Join the <span class="script">house</span></h2></div><p>Follow along for drops and specials. If you've been in, a quick review goes a long way for a local shop.</p></div>
+    <div data-community></div>
+  </div>
+</section>
+
+</main>
+<script>
+$$("[data-i]").forEach((el) => (el.outerHTML = I[el.dataset.i]));
+$$("[data-ic]").forEach((el) => (el.innerHTML = I[el.dataset.ic]));
+$("#dir-btn").href = mapsLink;
+$("#wave-card").href = waveLink();
+$("#tech-card").href = wa("Hi Habibi Hub, what tech and gadgets do you have in at the moment?");
+$("#fitchips").innerHTML = ["XROS", "XLIM", "Nord 5", "Caliburn G2", "Drag X PnP", "Argus", "Aegis Boost", "Vinci 3"].map((d) => `<span>${d}</span>`).join("") + "<span>+57 more</span>";
+
+const fmt = (n) => n.toLocaleString("en-ZA").replace(/ /g, " ");
+const TILES = [
+  ["Disposables", "s=Disposables", (p) => p.s === "Disposables"],
+  ["Pod kits", "s=Devices", (p) => p.s === "Devices"],
+  ["Nic salts", "s=Nic+Salts", (p) => p.s === "Nic Salts"],
+  ["E-liquids", "s=E+Liquids", (p) => p.s === "E Liquids"],
+  ["Coils & tanks", "s=Coils%2C+Pods+%26+Tanks", (p) => p.s === "Coils, Pods & Tanks"],
+  ["Hookah pipes", "s=Hookah+Pipes", (p) => p.s === "Hookah Pipes"],
+  ["Shisha", "s=Hookah+Flavour", (p) => p.s === "Hookah Flavour"],
+  ["Snus & Zyn", "c=snus", (p) => p.c === "snus"]
+];
+
+/* vape finder */
+const G = {
+  disp: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="7" y="6" width="10" height="16" rx="3"/><path d="M10 6V3h4v3"/><path d="M10 12h4"/></svg>',
+  pod: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 2h6v7H9z"/><rect x="6.5" y="9" width="11" height="13" rx="3"/><circle cx="12" cy="17" r="1.6"/></svg>',
+  bottle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M10 2h4v3h-4z"/><path d="M9 5h6l1 3v12a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8z"/><path d="M8 12h8"/></svg>',
+  hookah: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6l-1 3h-4z"/><path d="M12 5v9"/><path d="M8 8h8"/><path d="M8 14h8l2 4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z"/><path d="M14 11c4 0 6 2 6 6"/></svg>',
+  ice: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v20M3.5 7l17 10M20.5 7l-17 10"/><path d="m9 4 3 2 3-2M9 20l3-2 3 2"/></svg>',
+  fruit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="16" r="4"/><circle cx="16.5" cy="17" r="4"/><path d="M7.5 12C9 7 12 4 17 3M16.5 13c-.5-4-2-7-4.5-9"/></svg>',
+  sweet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M7.5 12 3 8.5v7zM16.5 12 21 8.5v7z"/></svg>',
+  tobacco: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c0-9 5-15 15-17-1 10-7 15-15 17z"/><path d="M5 21 14 11"/></svg>',
+  r1: '<svg viewBox="0 0 24 24"><text x="12" y="16.5" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="12" fill="currentColor">R150</text></svg>',
+  r2: '<svg viewBox="0 0 24 24"><text x="12" y="16.5" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="12" fill="currentColor">R300</text></svg>',
+  r3: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 12c0-3 4-3 6 0s6 3 6 0-4-3-6 0-6 3-6 0z"/></svg>'
+};
+const STEPS = [
+  { k: "kind", q: "What do you use?", o: [["Disposables", "disp", "Disposable", "Grab-and-go, no refills"], ["Nic Salts", "pod", "Pod kit", "Nic salts for pods"], ["E Liquids", "bottle", "Tank / mod", "Bigger clouds, 100ml juices"], ["Hookah Flavour", "hookah", "Hookah", "Shisha for the session"]] },
+  { k: "flav", q: "Pick a flavour mood", o: [["ice", "ice", "Icy & minty", "That cold exhale"], ["fruit", "fruit", "Fruity", "Mango, berry, watermelon"], ["sweet", "sweet", "Sweet & dessert", "Candy, custard, soda"], ["tobacco", "tobacco", "Tobacco & classic", "Old-school and smooth"]] },
+  { k: "max", q: "What's the budget?", o: [["150", "r1", "Under R150", "Easy on the pocket"], ["300", "r2", "Under R300", "The sweet spot"], ["0", "r3", "No limit", "Show me the best"]] }
+];
+let ALL = [], ans = {}, step = 0;
+function drawQuiz() {
+  const box = $("#quiz");
+  const prog = `<div class="prog">${[0, 1, 2, 3].map((i) => `<i class="${i <= step ? "on" : ""}"></i>`).join("")}</div>`;
+  $("#picked").innerHTML = STEPS.filter((s) => ans[s.k]).map((s) => `<span>${s.o.find((o) => o[0] === ans[s.k])[2]}</span>`).join("");
+  if (step < STEPS.length) {
+    const s = STEPS[step];
+    box.innerHTML = `${prog}<div class="anim"><div class="stepq"><p>${s.q}</p><small>Step ${step + 1} of 3</small></div>
+      <div class="choices">${s.o.map(([v, g, t, d]) => `<button class="choice" data-v="${v}"><span class="gi">${G[g]}</span><b>${t}</b><small>${d}</small></button>`).join("")}</div>
+      ${step ? '<button class="back" id="qback">Back</button>' : ""}</div>`;
+    $$(".choice", box).forEach((b) => (b.onclick = () => { ans[s.k] = b.dataset.v; step++; drawQuiz(); }));
+    if (step) $("#qback").onclick = () => { step--; delete ans[STEPS[step].k]; drawQuiz(); };
+    return;
+  }
+  const re = FLAVOURS[ans.flav].re, max = +ans.max;
+  const hits = ALL.filter((p) => p.s === ans.kind && re.test(p.n) && p.p && (!max || p.p <= max))
+    .sort((a, b) => (!!b.t - !!a.t) || (b.new - a.new) || (max ? 0 : b.p - a.p));
+  // one pick per brand first, so the four results aren't all the same range
+  const seen = new Set(), top = hits.filter((p) => !seen.has(p.b) && seen.add(p.b)).concat(hits).filter((p, i, a) => a.indexOf(p) === i);
+  hits.splice(0, hits.length, ...top);
+  const link = `shop.html?s=${encodeURIComponent(ans.kind)}&f=${ans.flav}${max ? "&max=" + max : ""}`;
+  box.innerHTML = `${prog}<div class="anim"><div class="stepq"><p>${hits.length ? "Your matches" : "Nothing on the shelf"}</p><small>${hits.length ? fmt(hits.length) + " in stock" : ""}</small></div>
+    ${hits.length ? `<div class="fres">${hits.slice(0, 4).map(cardHtml).join("")}</div>
+      <div class="ffoot"><button class="btn btn-red btn-sm" data-add="${hits[0].id}">Add top pick to bag</button><a class="btn btn-white btn-sm" href="${link}">See all ${fmt(hits.length)}</a><button class="back" id="qre" style="margin:0">Start again</button></div>`
+    : `<p class="muted">Nothing matches that combo today. Try another budget, or <a class="link" target="_blank" rel="noopener" href="${wa("Hi Habibi Hub, do you have any " + FLAVOURS[ans.flav].label.toLowerCase() + " " + ans.kind.toLowerCase() + "?")}">ask us on WhatsApp</a>.</p><button class="back" id="qre">Start again</button>`}</div>`;
+  $("#qre").onclick = () => { ans = {}; step = 0; drawQuiz(); };
+}
+drawQuiz();
+
+loadProducts().then((all) => {
+  ALL = all;
+  $$("[data-count-all]").forEach((el) => countUp(el, all.length));
+  const brandCounts = {};
+  all.forEach((p) => p.b && (brandCounts[p.b] = (brandCounts[p.b] || 0) + 1));
+  $$("[data-count-brands]").forEach((el) => countUp(el, Object.keys(brandCounts).length));
+  $("#cats").innerHTML = TILES.map(([name, q, fn]) => {
+    const list = all.filter(fn), pic = list.find((p) => p.t);
+    return `<a class="cat" href="shop.html?${q}"><div class="im">${pic ? `<img src="${esc(pic.t)}" alt="" loading="lazy" width="150" height="150">` : ""}</div>
+      <h3>${name}</h3><span>${fmt(list.length)} in stock</span><span class="arr">${I.arrow}</span></a>`;
+  }).join("");
+  const fresh = all.filter((p) => p.new && p.t);
+  $("#new").innerHTML = (fresh.length >= 6 ? fresh : all.filter((p) => p.t)).slice(0, 14).map(cardHtml).join("");
+  $("#brands").innerHTML = Object.entries(brandCounts).sort((a, b) => b[1] - a[1]).slice(0, 18)
+    .map(([b, n]) => `<a class="brand" href="shop.html?b=${encodeURIComponent(b)}">${esc(b)}<small>${n}</small></a>`).join("");
+});
+</script>
+</body>
+</html>

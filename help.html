@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Delivery & help · Habibi Hub Vape Store & Tech</title>
+<meta name="description" content="How ordering on WhatsApp, collection in Lambton, delivery and payment work at Habibi Hub Vape Store & Tech, Germiston, plus answers to common questions.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d0c0c">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:st}
+.step{counter-increment:st;padding:24px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line)}
+.step::before{content:counter(st);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--head);font-size:22px;margin-bottom:14px}
+.step h3{font-size:23px;text-transform:uppercase;margin-bottom:6px}
+.step p{color:var(--mute);font-size:14.5px}
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ways:has(> :nth-child(2):last-child){grid-template-columns:repeat(2,1fr)}
+.way.wv{background:linear-gradient(150deg,#0c2a4a,#0b1726);border-color:#1d4a7a}
+.way.wv h3,.way.wv p,.way.wv ul{color:#d6ecfb}
+.way.wv svg{color:#7dd3fc}
+.way{padding:26px;border-radius:var(--r);border:1px solid var(--paper-line);background:#fff}
+.way h3{font-size:26px;text-transform:uppercase;margin:10px 0 8px;color:var(--paper-ink)}
+.way p{color:var(--paper-mute);font-size:15px}
+.way svg{width:28px;height:28px;color:var(--red)}
+.way ul{margin:12px 0 0 18px;color:var(--paper-mute);font-size:14.5px;display:grid;gap:4px}
+.faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:44px;align-items:start}
+.qa{border-top:1px solid var(--line)}
+.qa details{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:18px 2px;font-weight:600;font-size:16px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-family:var(--head);font-size:28px;line-height:.8;color:var(--red-hi);transition:transform .25s}
+.qa details[open] summary::after{transform:rotate(45deg)}
+.qa details p{color:var(--mute);padding:0 2px 18px;max-width:62ch}
+.qa details p a{color:var(--ink)}
+@media (max-width:860px){.steps,.ways,.faq{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-page="help">
+<script src="assets/site.js"></script>
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Delivery &amp; help</span></nav>
+    <header class="phead"><span class="tag">Ordering made simple</span><h1 style="margin-top:12px">Delivery &amp; <span class="script">help</span></h1>
+      <p>How ordering works, what delivery and collection look like, and answers to the questions we get asked most.</p></header>
+  </div>
+
+  <section class="sec" style="padding-top:48px">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="tag">How to order</span><h2>Three steps</h2></div></div>
+      <div class="steps">
+        <div class="step"><h3>Fill your bag</h3><p>Browse the <a class="link" href="shop.html">shop</a> and add what you want. Everything listed is in stock.</p></div>
+        <div class="step"><h3>Send it on WhatsApp</h3><p>Open your bag, choose collect or deliver, and tap send. Your order arrives as a message to us.</p></div>
+        <div class="step"><h3>We confirm, you pay</h3><p>We check we have it, confirm the total and how you'd like to pay. Then it's yours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="tag">Getting it to you</span><h2>Getting <span class="script">it</span></h2></div></div>
+      <div class="ways">
+        <div class="way"><span data-i="pin"></span><h3>Collect in Germiston</h3><p>Pick up from the shop at 1 6th Ave, Lambton, once we've told you it's ready.</p>
+          <ul><li>No delivery fee</li><li>Bring your ID</li><li>Saturdays from 8:30am</li></ul></div>
+        <div class="way"><span data-i="truck"></span><h3>Delivery: ask us</h3><p>Send your address with your order on WhatsApp and we'll tell you what's possible and what it costs before you pay.</p>
+          <ul><li>Cost confirmed up front</li><li>ID checked on delivery (18+)</li></ul></div>
+        <div class="way wv" data-f="partner"><span data-i="out"></span><h3>Fast with 7Waves</h3><p>Our delivery partner 7Waves brings your order to your door, at the same prices as the shop.</p>
+          <ul><li>Choose "7Waves" in your bag</li><li>Copy your list in one tap</li><li><a class="link" id="wave-help" target="_blank" rel="noopener">Open 7Waves</a> and order</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap faq">
+      <div><span class="tag">FAQs</span><h2 style="margin-top:10px">Good questions</h2><p class="muted" style="margin-top:12px">Can't find your answer? <a class="link" id="faq-wa" target="_blank" rel="noopener">Message us on WhatsApp</a> or call <a class="link" href="tel:+27647629443">+27 64 762 9443</a>.</p></div>
+      <div class="qa">
+        <details open><summary>Do you deliver?</summary><p>Ask us. Send your order and address on WhatsApp and we'll tell you what's possible and what it costs before you pay.</p></details>
+        <details data-f="partner"><summary>What is 7Waves?</summary><p>7Waves is our delivery partner for fast local orders. Pick "7Waves" in your bag, copy your list and order the same items on 7Waves. Prices are the same as in the shop.</p></details>
+                <details><summary>Can I order online and collect in the shop?</summary><p>Yes. Choose "Collect" in your bag. We'll let you know on WhatsApp when it's packed and waiting for you at Lambton.</p></details>
+        <details><summary>How do I pay?</summary><p>Pay in the shop when you collect, or order on WhatsApp and we'll confirm the total and how to pay before anything is sent.</p></details>
+        <details><summary>Is everything on the website really in stock?</summary><p>The website only lists products that are in stock on our stock list. Things do sell fast, so if something goes before we confirm your order, we'll tell you straight away and suggest something similar.</p></details>
+        <details><summary>Do I need to be 18?</summary><p>Yes. We only sell to adults and check ID in the shop, on collection and on delivery.</p></details>
+        <details open><summary>Which coil or pod fits my device?</summary><p>Use our <a class="link" href="fit.html">Coil &amp; Pod Finder</a>: pick your device and it shows every coil, pod and tank that fits, in stock now. Still not sure? Send us a photo of your device on WhatsApp.</p></details>
+        <details><summary>My device stopped working. What now?</summary><p>Message us with your order details and what's happening. Warranty depends on the brand, but we'll help you sort it out.</p></details>
+        <details><summary>Do you only sell vapes?</summary><p>No. We also stock Dubai-inspired perfumes and tech &amp; gadgets. Ask us on WhatsApp what's in, or come and have a look.</p></details>
+        <details><summary>Do you sell wholesale?</summary><p>Yes, we sell wholesale and retail. Call or WhatsApp <a class="link" href="tel:+27647629443">064 762 9443</a> with what you need.</p></details>
+        <details><summary>Can you get a product you don't have?</summary><p>Often, yes. Tell us what you're after and we'll check with our suppliers.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+$$("[data-i]").forEach((el) => (el.outerHTML = I[el.dataset.i]));
+$("#faq-wa").href = wa("Hi Habibi Hub, I have a question: ");
+$("#wave-help").href = waveLink();
+</script>
+</body>
+</html>
