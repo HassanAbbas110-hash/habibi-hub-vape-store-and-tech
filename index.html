@@ -55,21 +55,15 @@ body[data-page="home"]{--kufi:"Reem Kufi",var(--head);--sand:#f7d58b;--gold:#f5a
 .hx-cue i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);animation:cue 2s ease-in-out infinite}
 @keyframes cue{50%{transform:scaleY(.4);transform-origin:top}}
 
-/* ---------- perfume launching soon ---------- */
-.launch{position:relative;background:var(--deep);padding-block:clamp(56px,8vw,110px)}
-.launch-card{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(22px,4vw,56px);border-radius:32px;
-  background:radial-gradient(80% 90% at 85% 10%,rgba(245,165,36,.18),transparent 60%),linear-gradient(160deg,#14130f,#0a1630 70%);border:1px solid rgba(247,213,139,.45);box-shadow:0 40px 100px -40px rgba(245,165,36,.35)}
-.launch-ph{border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:.78;border:1px solid rgba(247,213,139,.5);box-shadow:inset 0 0 0 8px rgba(3,16,42,.6)}
+/* ---------- perfume catalogue coming soon ---------- */
+.launch{background:var(--deep);padding-block:clamp(36px,5vw,64px)}
+.launch-card{display:grid;grid-template-columns:auto 1fr auto;gap:24px 32px;align-items:center;max-width:1040px;margin-inline:auto;padding:18px 28px 18px 18px;border-radius:22px;background:linear-gradient(120deg,rgba(245,165,36,.10),rgba(11,33,66,.9) 45%);border:1px solid rgba(247,213,139,.32)}
+.launch-ph{width:96px;height:120px;border-radius:999px 999px 14px 14px;overflow:hidden;border:1px solid rgba(247,213,139,.45)}
 .launch-ph img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
-.launch-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;font-weight:700;font-size:15px;color:#1a1204;
-  background:linear-gradient(110deg,#f7d58b 20%,#fff3cf 40%,#f5a524 60%,#f7d58b 80%);background-size:250% 100%;animation:shine 4s linear infinite}
-.launch-pill i{width:8px;height:8px;border-radius:50%;background:#1a1204}
-@keyframes shine{to{background-position:-250% 0}}
-.launch h2{font-size:clamp(40px,5.6vw,72px);line-height:1;margin:22px 0 18px;color:#fff6e2}
-.launch p{font-size:clamp(17px,1.6vw,19px);line-height:1.6;color:#e2dccd;max-width:44ch}
-.launch .hcta{margin-top:30px}
-@media (max-width:860px){.launch-card{grid-template-columns:1fr}.launch-ph{max-width:320px;aspect-ratio:.9;justify-self:center;width:100%}}
-@media (prefers-reduced-motion:reduce){.launch-pill{animation:none}}
+.launch-pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12.5px;font-weight:700;color:#1a1204;background:var(--sand)}
+.launch h2{font-size:clamp(22px,2.2vw,28px);line-height:1.15;margin:10px 0 6px;color:#fff6e2}
+.launch p{font-size:15.5px;line-height:1.55;color:var(--mute);max-width:56ch}
+@media (max-width:760px){.launch-card{grid-template-columns:auto 1fr;padding:18px}.launch-card .btn{grid-column:1/-1;justify-self:start}.launch-ph{width:72px;height:92px}}
 
 /* ---------- walk the walls: pinned sideways scroll ---------- */
 .walls{position:relative;background:var(--deep)}
@@ -237,14 +231,11 @@ body[data-page="home"]{--kufi:"Reem Kufi",var(--head);--sand:#f7d58b;--gold:#f5a
     <div class="launch-card">
       <div class="launch-ph"><img src="assets/img/perfumes.webp" alt="The perfume wall at Habibi Hub" width="738" height="336" loading="lazy"></div>
       <div>
-        <span class="launch-pill"><i aria-hidden="true"></i>Launching soon</span>
-        <h2 id="launch-h">A new perfume is coming to Habibi Hub</h2>
-        <p>A new scent is about to join our perfume wall in Lambton. Want to hear the moment it lands? Send us a message and we'll let you know first.</p>
-        <div class="hcta">
-          <a class="btn btn-red" id="launch-wa" target="_blank" rel="noopener">Tell me when it's in</a>
-          <a class="btn btn-line" href="#walls">See the perfume wall</a>
-        </div>
+        <span class="launch-pill">Coming soon</span>
+        <h2 id="launch-h">Our full perfume catalogue is coming online</h2>
+        <p>We already sell Dubai-inspired perfumes in the shop. The full range will be on the site soon. Until then, pop in to try them or ask us what's in.</p>
       </div>
+      <a class="btn btn-red btn-sm" id="launch-wa" target="_blank" rel="noopener">Ask what's in</a>
     </div>
   </div>
 </section>
@@ -375,7 +366,7 @@ $$("[data-i]").forEach((el) => (el.outerHTML = I[el.dataset.i]));
 $("#dir-btn").href = $("#dir-btn2").href = mapsLink;
 $("#wave-card").href = $("#hx-7w").href = waveLink();
 $("#tech-card").href = wa("Hi Habibi Hub, what tech and gadgets do you have in at the moment?");
-$("#launch-wa").href = wa("Hi Habibi Hub, please let me know when the new perfume launches.");
+$("#launch-wa").href = wa("Hi Habibi Hub, which perfumes do you have in at the moment?");
 $("#get-wa").href =wa("Hi Habibi Hub, I'd like to order for collection: ");
 $("#fitchips").innerHTML = ["XROS", "XLIM", "Nord 5", "Caliburn G2", "Drag X PnP", "Argus"].map((d) => `<span>${d}</span>`).join("");
 
